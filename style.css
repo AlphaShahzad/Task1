@@ -6,32 +6,49 @@ body {
 
 }
 
+.responsive {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.nav-p {
+    display: flex;
+    justify-content: center;
+}
+
 .main {
     display: flex;
     justify-content: space-between;
-    background: #4568DC; 
-    background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);  
-    background: linear-gradient(to left, #B06AB3, #4568DC); 
+    background: #4568DC;
+    background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);
+    background: linear-gradient(to left, #B06AB3, #4568DC);
     padding-left: 10px;
     padding-right: 10px;
     align-items: center;
-    height: 72px;
+    height: 100%;
+    max-height: 72px;
     margin-top: 3px;
-   
+    width: 100%;
+    max-width: 1920px;
 }
 
-.logo{
-    height: 50px;
-    max-height: 100%;;
-    width: 50px;
-    max-width:100%;
-    border-radius: 50%
+.logo {
+    max-height: 50px;
+    height: 100%;
+    max-width: 50px;
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 30px;
 }
-.logo:hover{
-    -ms-transform: scale(1.5); 
-    -webkit-transform: scale(1.5); 
+
+.logo:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
     transform: scale(1.5);
-    transition: 1s; 
+    transition: 0.5s;
 }
 
 ul {
@@ -72,11 +89,11 @@ li:hover {
     color: white;
     background-color: #111;
     border-radius: 30px;
-    transition:1s;
+    transition: 0.5s;
     -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2); 
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    
+
 }
 
 .btn-main {
@@ -90,9 +107,9 @@ li:hover {
     text-align: center;
     text-decoration: none;
     background-color: inherit;
-    font-size : 16px;
-    margin : 20px 5px;
-    cursor : pointer;
+    font-size: 16px;
+    margin: 20px 5px;
+    cursor: pointer;
     color: black;
     font-family: 'Norwester', sans-serif;
 
@@ -109,21 +126,17 @@ li:hover {
     cursor: pointer;
     border-radius: 30px;
     font-family: 'Norwester', sans-serif;
-    
-
 }
 
-.button:hover{
+.button:hover {
     color: white;
     background-color: #111;
     border-radius: 30px;
-    transition: 1s;
-    -ms-transform: scale(1.2); 
+    transition: 0.5s;
+    -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
-
-
 
 .btn-main {
     display: block;
@@ -137,20 +150,20 @@ li:hover {
 .main2 {
     display: flex;
     justify-content: space-between;
-    background-color:inherit;
+    background-color: inherit;
     padding-left: 10px;
     padding-right: 10px;
-    height: 150px;
+    height: 100%;
+    max-height: 150px;
 }
 
-.search-container{
+.search-container {
     margin: 8px auto;
     font-size: 17px;
     border: none;
     cursor: pointer;
     width: 100%;
     max-width: 500px;
-
 }
 
 input[type=text] {
@@ -173,108 +186,98 @@ form {
     position: absolute;
     right: -1px;
     top: 9px;
-    background: #4568DC; 
-    background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);  
-    background: linear-gradient(to left, #B06AB3, #4568DC); 
+    background: #4568DC;
+    background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);
+    background: linear-gradient(to left, #B06AB3, #4568DC);
     color: black;
     font-family: 'Norwester', sans-serif;
-   
 }
+
 .button1:hover {
     color: white;
     background-color: #111;
     border-radius: 30px;
-    transition: 1s;
+    transition: 0.5s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
-.main3{
-    display: flex;
-    background-color:inherit;
-    padding: 20px;
-    border: 1px solid ;
-    border-color:#B06AB3 #4568DC;
-    border-radius: 20px;
-    margin: 1px;
-}
-.huming {
 
-    height: 300px;
-    max-width: 100%;
-    width: 500px;
-    border-radius: 60px;
-    
+.main3 {
+    display: flex;
+    border: 1px solid;
+    border-color: #B06AB3 #4568DC;
+    border-radius: 30px;
+    max-width: 1920px;
+    margin: auto;
 }
-.huming:hover{
-    transition:1s;
+
+.huming {
+    float: left;
+    border-radius: 30px;
+
+}
+
+.huming:hover {
+    transition: 0.5s;
     -ms-transform: scale(1.08);
-    -webkit-transform: scale(1.08); 
+    -webkit-transform: scale(1.08);
     transform: scale(1.08);
 }
-.cap{
-    border: 1px ;
+
+.cap {
+    max-width: 100%;
+    padding-left: 2%;
+}
+
+.main4 {
+    display: flex;
+    border: 1px solid;
+    border-color: #B06AB3 #4568DC;
+    border-radius: 30px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.cap2 {
+    max-width: 100%;
+    padding-right: 2%;
+}
+
+.wolf {
     float: right;
-    word-wrap: break-word;
-    max-width: 100%;
-    width: 845px;
-    padding-left: 20px;
+    border-radius: 30px;
+
 }
-.main4{
-    display:flex ;
-    background-color:inherit ;
-    padding: 20px;
-    border: 1px solid ;
-    border-color:#B06AB3 #4568DC ;
-    border-radius: 20px;
-    margin: 1px;
-}
-.cap2{
-    float: left;
-    word-wrap: break-word;
-    max-width: 100%;
-    width: 845px;
-    padding-left: 35px;
-}
-.wolf{
-    height: 300px;
-    max-width: 100%;
-    width: 450px;
-    border-radius: 60px;
-    
-}
-.wolf:hover{
-    transition:1s;
-    -ms-transform: scale(1.1); 
+
+.wolf:hover {
+    transition: 0.5s;
+    -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
-   padding: 20px;
-   background: #4568DC; 
-   background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);  
-   background: linear-gradient(to left, #B06AB3, #4568DC); 
+    background: #4568DC;
+    background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);
+    background: linear-gradient(to left, #B06AB3, #4568DC);
+    max-width: 1920px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.company{
+    padding-left: 50px;
+}
+.design{
+    padding-right: 50px;
 }
 
 span{
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
-    align-items: center;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
 
-}
-h1{
-    display: flex;
-    margin: 20px;
-    align-items: center;
-    font-family: 'Norwester', sans-serif;
-}
-
-p{
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    max-width: 100%;
-    width: 720px;
 }
